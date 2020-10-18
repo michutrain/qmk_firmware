@@ -46,9 +46,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,----------------------------------------------------------------.
    * |~ `|F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|Del    |Ins |
    * |----------------------------------------------------------------|
-   * |     |Tog|Cyc|iHue|iSat|iBri|   |   |PSc|SLk|Pau|Up |   |   |   |
+   * |     |Tog|Cyc|iHue|iSat|iBri|   |   |PSc|SLk|Pau|Up |   |   |F23|
    * |----------------------------------------------------------------|
-   * |      |BLTog|BLCyc|iBL|dBL|   |   |   |Hom|PUp|Lef|Rig|    |    |
+   * |      |BLTog|BLCyc|iBL|dBL|   |   |   |Hom|PUp|Lef|Rig|    | F24|
    * |----------------------------------------------------------------|
    * |        |   |   |   |   |   |   |   |End|PDn|Dow|      |PUp|    |
    * |----------------------------------------------------------------|
@@ -57,8 +57,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
 [1] = LAYOUT_65_ansi(
    KC_GRV,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9, KC_F10, KC_F11, KC_F12,          KC_DEL,KC_INS, \
-   _______,RGB_TOG, RGB_MODE_FORWARD,RGB_HUI,RGB_SAI,RGB_VAI,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,  KC_UP,_______,     _______,_______,   \
-      _______,BL_TOGG,BL_STEP,BL_INC,BL_DEC,_______,_______,_______,KC_HOME,KC_PGUP,KC_LEFT,KC_RGHT,            _______,_______, \
+   _______,RGB_TOG, RGB_MODE_FORWARD,RGB_HUI,RGB_SAI,RGB_VAI,_______,_______,KC_PSCR,KC_SLCK,KC_PAUS,  KC_UP,_______,     _______,KC_F23,   \
+      _______,BL_TOGG,BL_STEP,BL_INC,BL_DEC,_______,_______,_______,KC_HOME,KC_PGUP,KC_LEFT,KC_RGHT,            _______,KC_F24, \
            _______,_______,_______,_______,_______,_______,_______,_______, KC_END,KC_PGDN,KC_DOWN,       _______,KC_PGUP,_______, \
     _______,  _______,  _______,                     _______,                     _______,_______,_______,KC_HOME,KC_PGDN, KC_END),
 
